@@ -8,7 +8,6 @@ namespace TaskManagerAPI.Controllers
     [Route("api/[controller]")]
     public class TasksController : Controller
     {
-        private readonly int _testValue;
         private readonly TaskManagerDBContext _taskManagerDBContext;
         public TasksController(TaskManagerDBContext taskManagerDBContext)
         {
