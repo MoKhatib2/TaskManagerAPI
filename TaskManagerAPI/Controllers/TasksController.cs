@@ -9,6 +9,7 @@ namespace TaskManagerAPI.Controllers
     public class TasksController : Controller
     {
         private readonly TaskManagerDBContext _taskManagerDBContext;
+        private int _taskId;
         public TasksController(TaskManagerDBContext taskManagerDBContext)
         {
             this._taskManagerDBContext = taskManagerDBContext;
